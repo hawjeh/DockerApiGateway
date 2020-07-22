@@ -1,0 +1,21 @@
+﻿{
+  "routes": [
+    {
+      "endpoint": "/one",
+      "destination": {
+        "uri": "http://172.18.0.3/webone/", // "uri": "http://localhost:81/webone/",
+        "requiresAuthentication": "false"
+      }
+    },
+    {
+      "endpoint": "/two",
+      "destination": {
+        "uri": "http://172.18.0.4/webtwo/", // "uri": "http://localhost:82/webtwo/",
+        "requiresAuthentication": "false"
+      }
+    }
+  ],
+  "authenticationService": {
+    "uri": "http://localhost:8080/api/auth/"
+  }
+}
